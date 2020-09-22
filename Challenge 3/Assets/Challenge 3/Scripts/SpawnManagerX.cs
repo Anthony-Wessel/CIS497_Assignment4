@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Anthony Wessel
+ * Assignment 4 Challenge 3
+ * Spawns bombs and money
+ */
+ 
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,7 +19,7 @@ public class SpawnManagerX : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("PrawnsObject", spawnDelay, spawnInterval);
+        InvokeRepeating("SpawnObjects", spawnDelay, spawnInterval);
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerControllerX>();
     }
 

@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Anthony Wessel
+ * Assignment 4 Challenge 3
+ * Moves an object to the left at a fixed speed
+ */
+ 
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,7 +24,7 @@ public class MoveLeftX : MonoBehaviour
     void Update()
     {
         // If game is not over, move to the left
-        if (playerControllerScript.gameOver)
+        if (!playerControllerScript.gameOver)
         {
             transform.Translate(Vector3.left * speed * Time.deltaTime, Space.World);
         }

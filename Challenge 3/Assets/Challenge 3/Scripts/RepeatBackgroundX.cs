@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Anthony Wessel
+ * Assignment 4 Challenge 3
+ * Repeats the background so that it can loop infinitely
+ */
+ 
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,7 +16,7 @@ public class RepeatBackgroundX : MonoBehaviour
     private void Start()
     {
         startPos = transform.position; // Establish the default starting position 
-        repeatWidth = GetComponent<BoxCollider>().size.y / 2; // Set repeat width to half of the background
+        repeatWidth = GetComponent<BoxCollider>().size.x / 2; // Set repeat width to half of the background
     }
 
     private void Update()
