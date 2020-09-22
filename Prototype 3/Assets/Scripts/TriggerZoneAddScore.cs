@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Anthony Wessel
+ * Assignment 4 Prototype 3
+ * Increments the score when the player hits the attached trigger
+ */
+
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

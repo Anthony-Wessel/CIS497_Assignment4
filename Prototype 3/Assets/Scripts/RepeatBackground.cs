@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Anthony Wessel
+ * Assignment 4 Prototype 3
+ * Loops the background so that it can scroll infinitely
+ */
+ 
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
