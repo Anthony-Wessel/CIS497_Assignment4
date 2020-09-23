@@ -47,6 +47,15 @@ public class PlayerControllerX : MonoBehaviour
         {
             playerRb.AddForce(Vector3.up * floatForce);
         }
+
+        // Stop player if they are moving past the upper boundary
+        if (transform.position.y >= maxHeight)
+        {
+            Vector3 pos = transform.position;
+            pos.y = maxHeight;
+            transform.position = pos;
+            playerRb.velocity = Vector3.zero;
+        }
     }
 
     private void OnCollisionEnter(Collision other)
